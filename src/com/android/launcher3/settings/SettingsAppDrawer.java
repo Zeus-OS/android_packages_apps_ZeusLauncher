@@ -39,7 +39,7 @@ import androidx.preference.PreferenceGroup.PreferencePositionCallback;
 import androidx.preference.PreferenceScreen;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.android.internal.util.palladium.PalladiumUtils;
+import com.android.internal.util.zeus.ZeusUtils;
 
 import com.android.launcher3.LauncherAppState;
 import com.android.launcher3.LauncherFiles;
@@ -184,7 +184,7 @@ public class SettingsAppDrawer extends FragmentActivity
                     return isDPSEnabled(getContext());
                 case Utilities.KEY_ALLOW_ALL_APPS_BLUR:
                 case Utilities.KEY_ALL_APPS_BLUR:
-                    return PalladiumUtils.supportsBlur();
+                    return ZeusUtils.supportsBlur();
             }
             return true;
         }

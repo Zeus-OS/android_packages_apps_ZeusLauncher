@@ -13,11 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package com.zeus.launcher;
 
-package com.palladium.launcher;
+import com.android.launcher3.Launcher;
 
-import com.android.launcher3.uioverrides.QuickstepLauncher;
-
-public class CustomLauncher extends QuickstepLauncher {
+public class CustomLauncher extends Launcher {
 
 }

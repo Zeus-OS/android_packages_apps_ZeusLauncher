@@ -36,7 +36,7 @@ import androidx.preference.PreferenceGroup.PreferencePositionCallback;
 import androidx.preference.PreferenceScreen;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.android.internal.util.palladium.PalladiumUtils;
+import com.android.internal.util.zeus.ZeusUtils;
 
 import com.android.launcher3.LauncherAppState;
 import com.android.launcher3.LauncherFiles;
@@ -186,7 +186,7 @@ public class SettingsMisc extends FragmentActivity
 
                 case Utilities.KEY_ALLOW_OVERVIEW_BLUR:
                 case Utilities.KEY_OVERVIEW_BLUR:
-                    return PalladiumUtils.supportsBlur();
+                    return ZeusUtils.supportsBlur();
 
             }
             return true;
